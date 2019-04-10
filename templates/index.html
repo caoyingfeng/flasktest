@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="post" novalidate>
+    {{ wtf.username.label }}
+    {{ wtf.username }}
+    <p><h1>{{ wtf.username.errors.0 }}</h1></p>
+    <p>
+    {{ wtf.password.label }}
+    {{ wtf.password }}
+    <p><h1>{{ wtf.password.errors.0 }}</h1></p>
+    </p>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
