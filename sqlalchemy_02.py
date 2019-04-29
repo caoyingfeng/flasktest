@@ -36,7 +36,6 @@ class Article(Base):
     content = Column(LONGTEXT)
 
 
-
 Base.metadata.drop_all()
 Base.metadata.create_all()
 article = Article(price=19.9)
