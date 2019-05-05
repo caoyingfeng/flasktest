@@ -14,4 +14,4 @@ DB_URI = "mysql+pymysql://{username}:{password}@{host}:{port}/{db}?charset=utf8"
 SQLALCHEMY_DATABASE_URI = DB_URI
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 SECRET_KEY = os.urandom(24)
-TEMPLATES_AUTO_RELOAD = True
+# TEMPLATES_AUTO_RELOAD = True

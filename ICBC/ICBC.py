@@ -4,11 +4,13 @@ from exts import db
 from models import User
 import config
 from auth import login_required
+from flask_wtf import CSRFProtect
 
 app = Flask(__name__, template_folder='template')
 app.config.from_object(config)
 
 db.init_app(app)
+CSRFProtect(app)
 
 
 

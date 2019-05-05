@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>登陆</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block head %}
+    <script src="{{ url_for('static', filename='login.js') }}"></script>
+{% endblock %}
+
+{% block body %}
 <form action="" method="post">
     <table>
         <tr>
@@ -16,9 +15,8 @@
             <td><input type="password" name="password"></td>
         </tr>
         <tr>
-            <td><input type="submit" value="登陆"></td>
+            <td><input type="submit" value="登陆" id="submit"></td>
         </tr>
     </table>
 </form>
-</body>
-</html>
+{% endblock %}
